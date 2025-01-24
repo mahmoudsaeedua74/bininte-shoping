@@ -46,7 +46,7 @@ export default function Cart({ setCartOpen, cartOpen }: CartProps) {
                     />
                   </div>
                   <div className="relative flex flex-1 flex-col justify-between">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="flex flex-col gap-4 mt-4">
                       <div>
                         <p className="text-base font-semibold text-gray-900">
                           {item.title}
@@ -62,7 +62,7 @@ export default function Cart({ setCartOpen, cartOpen }: CartProps) {
                     </div>
                     <button
                       type="button"
-                      className="absolute top-0 right-0 p-2 text-gray-500 hover:text-red-600 transition-all mt-4 duration-200"
+                      className="absolute top-5 right-0 p-2  text-gray-500 hover:text-red-600 transition-all mt-4 duration-200"
                       onClick={() => dispatch(deleteItem(item.productId))}
                     >
                       <MdDeleteForever size={25} />
