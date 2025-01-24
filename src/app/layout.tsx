@@ -4,8 +4,8 @@ import ReduxProvider from "@/Components/ReduxProvider/ReduxProvider";
 import Navbar from "@/Components/Navbar/Navbar";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/Components/Footer/Footer";
-import "./globals.css";
-const fonts = localFont({
+import './globals.css' 
+ const fonts = localFont({
   src: "../Components/assets/Fonts/FontsFree-Net-Proxima-Nova-Sbold.otf",
 });
 export const metadata: Metadata = {
